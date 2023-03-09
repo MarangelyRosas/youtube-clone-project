@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  const testYouTubeAPI = () => {
+    console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
+   //fetch('')
+  }
+
+  useEffect(() => {
+    testYouTubeAPI();
+  })
+  // .catch((error) => {
+  //   console.log(error);
+  // })
+
   return (
     <div className="App">
       <header className="App-header">
