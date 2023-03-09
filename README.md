@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+## Group: Marangely, Tafari, Touhami
+
+## This is our Trello Board URL address:
+To see our Trello Board [Click Here](https://trello.com/b/vmCeyjDh/youtube-group-project)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
