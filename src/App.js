@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
-
+import Footer from './Common/Footer';
 
 function App() {
 
