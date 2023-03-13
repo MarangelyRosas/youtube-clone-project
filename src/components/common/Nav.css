@@ -1,0 +1,13 @@
+header {
+    text-align: left;
+    margin:auto;
+    width: 898px;
+    color: white;
+    background-color: red;
+    border:  2px solid red;
+  
+}
+
+p {
+    word-spacing: 20px;
+}
