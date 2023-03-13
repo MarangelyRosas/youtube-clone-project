@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import Modal from "../Modal";
-import Videolist from "../VideoList"
+import VideoList from "../VideoList"
 
 
-export default function home({videos, setVideos})
+export default function Home({videos, setVideos})
 const [search, setSearch] = useState("");
 const [searchResults, setSearchResults] = useState([])
 
 
-const handelChange = (e) => {
+const handleChange = (e) => {
     setSearch(e.target.value);
 }
 
-const handelSubmit = (e) => {
+const handleSubmit = (e) => {
     e.preventDefault()
     fetch(`${apiURL}&part=snippet`)
     .then((response) => response.json())
@@ -25,9 +25,8 @@ const handelSubmit = (e) => {
                 return{
                     videoId: video.id.videoId,
                     title: video.snippet.title,
-                    thumbnail: video.snippet.thumbnail.default,
+                    thumbnail: video.snippet.thumbnail.default
                 }
-
             })
         )
     })
@@ -37,25 +36,26 @@ const handelSubmit = (e) => {
     });
     setSearch("")
     
+
+
+    return (
+        <div>
+            <form onSubmit={(e) => handleSubmit(e)}>
+                <input
+                    id="search"
+                    name="search"
+                    value={search}
+                    onChange={handleChange}
+                    placeholder="videos"
+                ></input>
+                <label></label>
+                <input id="submit" type="submit"></input>
+            </form>
+                {videos.length === 0 ? (
+                <p>No search result yet. Please submit a search above.</p>
+            ) : (
+                <VideoList videos={videos} />           
+            )}
+        </div>
+    )
 }
-return(
-    <div>
-        <form onSubmit={(e) => handelSubmit(e)}>
-        <input
-        id="search"
-        name="search"
-        value={search}
-        onChange={handelChange}
-        placeholder="videos"
-        ></input>
-        <label></label>
-        <input id="submit" type="submit"></input>
-        </form>
-        {videos.length === 0 ? (
-            <p>No search result yet. Please submit a search above.</p>
-        ) : (
-            <videoList videos={videos} />
-        
-        )}
-    </div>
-)
