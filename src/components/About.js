@@ -1,17 +1,17 @@
 const developers = [
     {
-        name:"touhami",
+        name:"Touhami Benmessaoud",
         description:'',
-        githubLink:'url'
+        githubLink:'https://github.com/touhami-ben'
 
     },
     {
-        name:"tafari",
+        name:"Tafari Excell",
         description:"",
-        githubLink:"url"
+        githubLink:"https://github.com/Tafarigit"
     },
     {
-        name:"marangely",
+        name:"Marangely Rosas",
         description:"",
         githubLink:"https://github.com/MarangelyRosas"
     }
