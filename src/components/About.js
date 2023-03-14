@@ -1,33 +1,35 @@
 const developers = [
     {
-        name:"touhami",
-        description:'',
-        githubLink:'url'
+        name:"Touhami Benmessaoud",
+        description:"",
+        githubLink:'https://github.com/touhami-ben'
 
     },
     {
-        name:"tafari",
+        name:"Tafari Excell",
         description:"",
-        githubLink:"url"
+        githubLink:"https://github.com/Tafarigit"
     },
     {
-        name:"marangely",
+        name:"Marangely Rosas",
         description:"",
         githubLink:"https://github.com/MarangelyRosas"
     }
 ]
-export default function About({developers}){
+export default function About(){
     return(
         <section className="developer-info">
-            {developers.map(developer => {
-            return <About name={developer.name} description={developer.description} githubLink={developer.githubLink} />
+            {developers.map((developer, index) => {
+                return (
+            <div key={index}> 
+                <p className="name">{developer.name}</p>
+                <p className="description">{developer.description}</p>
+                <p className="githubLink">{developer.githubLink}</p>
+            </div>
+                )
             
         })}
         </section>
     )
     
 }
-{/* <p className="name">{developer.name}</p>
-            <p className="description">{developer.description}</p>
-            <p className="githubLink">{developer.githubLink}</p>
-         */}
