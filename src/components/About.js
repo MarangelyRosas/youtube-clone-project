@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const developers = [
     {
         name:"Touhami Benmessaoud",
@@ -24,7 +26,7 @@ export default function About(){
             <div key={index}> 
                 <p className="name">{developer.name}</p>
                 <p className="description">{developer.description}</p>
-                <p className="githubLink">{developer.githubLink}</p>
+                <Link to={developer.githubLink} className="githubLink">{developer.githubLink}</Link>
             </div>
                 )
             
