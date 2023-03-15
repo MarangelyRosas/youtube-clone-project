@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // import ShowVideo from "./ShowVideo"
 import ErrorMessage from "./errors/ErrorMessage"
-// import Modal from "../Modal";
+import Modal from "./Modal";
 import AllVideos from "./AllVideos";
 
 function Home () {
@@ -11,6 +11,7 @@ function Home () {
     const [search, setSearch] = useState("");
     const [searchResults, setSearchResults] = useState([]);
     const [error, setError] = useState(false);
+    const [isOpen, setIsOpen] = useState(false)
     //  const [videos, setVideos] = useState([])
 
 
@@ -68,18 +69,20 @@ function Home () {
         <div>
             <form onSubmit={handleSubmit}>
                 <input type="text" size="70" onChange={handleTextChange}  ></input>
-                <input type="submit"  value="Search"  className="searchSbmt"/>
+                <input type="submit"  value="Search"  className="searchSubmit"/>
             </form>
             <section className="searchedVideos">
             {searchResults.map((video) => <AllVideos video={video}  key={video.id.videoId} />)}
             </section>
         </div>
             )}
+            {isOpen ? (
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+            Something is Wrong .Please try again</Modal>) : null}
         
-        </div>
-    )
-}
-
+        </div>   
+        )
+    }
 export default Home;
 
             // <section className="videos-index-wrapper">
