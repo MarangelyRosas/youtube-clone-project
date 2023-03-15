@@ -1,12 +1,11 @@
 import "./App.css";
 import Nav from "./components/common/Nav.js";
-//import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home.js";
 import Footer from "./components/common/Footer.js";
-//import YouTube from "react-youtube";
-//import ShowVideo from "./components/ShowVideo.js";
+import ShowVideo from "./components/ShowVideo.js";
 import About from "./components/About";
+import AllVideos from "./components/AllVideos";
 
 
 
@@ -19,8 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/video" element={<ShowVideo />} /> */}
-          
+          <Route path="/videos/:videoId" element={<ShowVideo />} />  
         </Routes>
         <Footer />
       </Router>
