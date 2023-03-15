@@ -1,26 +1,43 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import YouTube from "react-youtube"
+import { useParams } from "react-router-dom"
 
-export default function ShowVideo({ videos }) {
+export default function ShowVideo() {
+    const { videoId } = useParams();
+   
 
     return (
-      <article>
-          <ul>
-        {videos.map((video, i) => {
+        <>
+        <h2>Show Video Page</h2>
+        <YouTube videoId={videoId} />            
+        </>
+    );
+} 
+
+
+
+
+
+    
+//     return (
+//       <article>
+//           <ul>
+//         {videos.map((video, i) => {
   
-          return (
-              <li key={`${video.videoId}-${i}`} >
-                  <Link to={`/videos/${video.videoId}`} >
-                      <img src={video.thumbnail.url} alt={video.title} />
-                      <p>{video.title}</p>
-                  </Link>
-              </li>
-          )
-        })}
-        </ul>
-      </article>
-    )
-}
+//           return (
+//               <li key={`${video.videoId}-${i}`} >
+//                   <Link to={`/videos/${video.videoId}`} >
+//                       <img src={video.thumbnail.url} alt={video.title} />
+//                       <p>{video.title}</p>
+//                   </Link>
+//               </li>
+//           )
+//         })}
+//         </ul>
+//       </article>
+//     )
+// }
 
 // function ShowVideo(videos) {
     // const apiURL = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
