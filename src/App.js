@@ -5,7 +5,7 @@ import Home from "./components/Home.jsx";
 import Footer from "./components/common/Footer.jsx";
 import ShowVideo from "./components/ShowVideo.jsx";
 import About from "./components/About.jsx";
-import AllVideos from "./components/AllVideos.jsx";
+//import AllVideos from "./components/AllVideos.jsx";
 
 
 

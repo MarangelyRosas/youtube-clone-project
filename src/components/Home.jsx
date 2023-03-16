@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+//import { Link, useNavigate } from "react-router-dom";
 // import ShowVideo from "./ShowVideo"
 import ErrorMessage from "./errors/ErrorMessage"
 // import Modal from "../Modal";
 import AllVideos from "./AllVideos";
 
 function Home () {
-    const navigate = useNavigate()
-    const apiURL = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
+    //const navigate = useNavigate()
+    //const apiURL = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
     const [search, setSearch] = useState("");
     const [searchResults, setSearchResults] = useState([]);
     const [error, setError] = useState(false);
@@ -30,6 +30,7 @@ function Home () {
             //   console.log(response);
               setSearchResults(response.items);
             //   console.log(response.items, searchResults);
+            
             });
         };
 
@@ -111,22 +112,6 @@ export default Home;
 
 
 
-                 {/* <form onSubmit={(e) => handleSubmit(e)}>
-                <input
-                    id="search"
-                    name="search"
-                    value={search}
-                    onChange={handleTextChange}
-                    placeholder="videos"
-                ></input>
-                <label>Submit Search</label>
-                <input id="submit" type="submit"></input>
-            </form>
-                {videos.length === 0 ? (
-                <p>No search result yet. Please submit a search above.</p>
-            ) : (
-                <ShowVideo videos={videos} />           
-            )} */}
 
 
 
