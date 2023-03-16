@@ -5,6 +5,7 @@ const developers = [
         name:"Touhami Benmessaoud",
         description:"I am a full-stack developer in progress who has always had a love for technology.",
         githubLink:'https://github.com/touhami-ben'
+        
 
     },
     {
@@ -18,6 +19,11 @@ const developers = [
         githubLink:"https://github.com/MarangelyRosas"
     }
 ]
+    const project ={
+        description: "Create a React application that lets you search for YouTube videos using the YouTube API, then choose a video from a list to watch.This project is designed to assess the React skills you have gained so far. There are 7 features that need to be completed. Each completed feature (passes all the tests) will be worth 1 point. A minium of 5 points must be attained in order to pass this assessment. You may receive partial credit (0.5 points) for features that are close but do not work exactly as specified.",
+        name: "YouTube-clone"
+    }
+
 export default function About(){
     return(
         <section className="developer-info">
@@ -26,12 +32,19 @@ export default function About(){
             <div key={index}> 
                 <p className="name">{developer.name}</p>
                 <p className="description">{developer.description}</p>
+
                 <Link to={developers.githubLink} className="githubLink">{developer.githubLink}</Link>
             </div>
                 )
+            })};
+            <h2 className="project">
+                Project Description:
+                <br></br>
+                {project.description}
+            </h2>
             
-        })}
         </section>
+        
     )
     
 }
