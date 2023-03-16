@@ -1,11 +1,11 @@
 import "./App.css";
-import Nav from "./components/common/Nav.js";
+import Nav from "./components/common/Nav.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home.js";
-import Footer from "./components/common/Footer.js";
-import ShowVideo from "./components/ShowVideo.js";
-import About from "./components/About";
-import AllVideos from "./components/AllVideos";
+import Home from "./components/Home.jsx";
+import Footer from "./components/common/Footer.jsx";
+import ShowVideo from "./components/ShowVideo.jsx";
+import About from "./components/About.jsx";
+import AllVideos from "./components/AllVideos.jsx";
 
 
 

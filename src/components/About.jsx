@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 const developers = [
     {
         name:"Touhami Benmessaoud",
-        description:"I am a full-stack developer in progress.has always had a love of technology, and its insides",
+        description:"I am a full-stack developer in progress who has always had a love for technology.",
         githubLink:'https://github.com/touhami-ben'
 
     },
     {
         name:"Tafari Excell",
-        description:"Developer with a focus on education and technology from New York City. Likes travel , food and music.",
+        description:"Developer with a focus on education and technology from New York City. Likes travel, food, and music.",
         githubLink:"https://github.com/Tafarigit"
     },
     {
