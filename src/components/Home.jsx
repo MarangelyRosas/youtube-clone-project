@@ -31,6 +31,7 @@ function Home () {
             //   console.log(response);
               setSearchResults(response.items);
             //   console.log(response.items, searchResults);
+            
             });
         };
 
