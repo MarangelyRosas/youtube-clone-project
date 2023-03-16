@@ -17,8 +17,6 @@ export default function ShowVideo() {
 
 
 
-
-
     
 //     return (
 //       <article>
@@ -62,5 +60,3 @@ export default function ShowVideo() {
 //     })
 // }
 // export default ShowVideo;
-
-

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const developers = [
     {
         name:"Touhami Benmessaoud",
-        description:"a full-stack developer in progress.has always had a love of technology, and its insides",
+        description:"I am a full-stack developer in progress.has always had a love of technology, and its insides",
         githubLink:'https://github.com/touhami-ben'
 
     },
@@ -26,7 +26,7 @@ export default function About(){
             <div key={index}> 
                 <p className="name">{developer.name}</p>
                 <p className="description">{developer.description}</p>
-                <Link to={developer.githubLink} className="githubLink">{developer.githubLink}</Link>
+                <Link to={developers.githubLink} className="githubLink">{developer.githubLink}</Link>
             </div>
                 )
             
