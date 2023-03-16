@@ -112,25 +112,6 @@ export default Home;
 
 
 
-            //      {/* <form onSubmit={(e) => handleSubmit(e)}>
-            //     <input
-            //         id="search"
-            //         name="search"
-            //         value={search}
-            //         onChange={handleTextChange}
-            //         placeholder="videos"
-            //     ></input>
-            //     <label>Submit Search</label>
-            //     <input id="submit" type="submit"></input>
-            // </form>
-            //     {videos.length === 0 ? (
-            //     <p>No search result yet. Please submit a search above.</p>
-            // ) : (
-            //     <ShowVideo videos={videos} />           
-            // )} */}
-
-
-
 
                 // useEffect(() => {
     //     ShowVideo({videos})
