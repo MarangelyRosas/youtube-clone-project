@@ -5,6 +5,9 @@
 ## This is our Trello Board URL address:
 To see our Trello Board [Click Here](https://trello.com/b/vmCeyjDh/youtube-group-project)
 
+## This is our Netlify Deployment URL address:
+To see our Netlify Deployment [Click Here](https://app.netlify.com/sites/deluxe-chaja-c3315e/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
