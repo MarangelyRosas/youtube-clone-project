@@ -10,8 +10,8 @@ function Home () {
     //const apiURL = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
     const [search, setSearch] = useState("");
     const [searchResults, setSearchResults] = useState([]);
-    //const [error,setError] = useState(false);
-    const error = ErrorMessage;
+    const [error,setError] = useState(false);
+    //const error = ErrorMessage;
     //  const [videos, setVideos] = useState([])
 
 

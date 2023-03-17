@@ -5,7 +5,7 @@ import Home from "./components/Home.jsx";
 import Footer from "./components/common/Footer.jsx";
 import ShowVideo from "./components/ShowVideo.jsx";
 import About from "./components/About.jsx";
-//import AllVideos from "./components/AllVideos.jsx";
+import AllVideos from "./components/AllVideos.jsx";
 
 
 
@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/videos" element={<AllVideos />} />  
           <Route path="/videos/:videoId" element={<ShowVideo />} />  
         </Routes>
         <Footer />
