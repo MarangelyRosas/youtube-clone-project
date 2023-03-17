@@ -19,32 +19,34 @@ const developers = [
         githubLink:"https://github.com/MarangelyRosas"
     }
 ]
-    const project ={
-        description: "Create a React application that lets you search for YouTube videos using the YouTube API, then choose a video from a list to watch.This project is designed to assess the React skills you have gained so far. There are 7 features that need to be completed. Each completed feature (passes all the tests) will be worth 1 point. A minium of 5 points must be attained in order to pass this assessment. You may receive partial credit (0.5 points) for features that are close but do not work exactly as specified.",
+    const project = {
+        description: "Welcome to our YouTube Clone Project. This project is designed to assess the React skills we have gained so far in our journey to become Full Stack Web Developers. Inspired by the original YouTube, we created a React Application (from scratch) that allows users to search for YouTube videos using the YouTube API. It then allows you to choose a video from your search results to watch and the ability to share videos with an easy-to-use interface that anyone can navigate. Our website is designed to be user-friendly, with responsive design optimized for different devices such as desktops, laptops, tablets, and smartphones.",
         name: "YouTube-clone"
     }
 
 export default function About(){
     return(
-        <section className="developer-info">
+        <div>      
+            <h3 className="project">
+                Project Description:
+            </h3>
+            <h4>
+                {project.description}
+            </h4>
+                <br></br>
+        <section className="developer-info">       
             {developers.map((developer, index) => {
                 return (
             <div key={index}> 
-                <p className="name">{developer.name}</p>
+                <h4 className="name">{developer.name}</h4>
                 <p className="description">{developer.description}</p>
 
                 <Link to={developers.githubLink} className="githubLink">{developer.githubLink}</Link>
             </div>
                 )
-            })};
-            <h2 className="project">
-                Project Description:
-                <br></br>
-                {project.description}
-            </h2>
-            
+            })};                     
         </section>
-        
+        </div>
     )
     
 }
