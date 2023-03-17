@@ -20,7 +20,7 @@ const developers = [
     }
 ]
     const project = {
-        description: "Welcome to our YouTube Clone Project. his project is designed to assess the React skills we have gained so far in our journey to become Full Stack Web Developers. Inspired by the original YouTube, we created a React Application (from scratch) that allows users to search for YouTube videos using the YouTube API. It then allows you to choose a video from your search results to watch and the ability to share videos with an easy-to-use interface that anyone can navigate. Our website is designed to be user-friendly, with responsive design optimized for different devices such as desktops, laptops, tablets, and smartphones.",
+        description: "Welcome to our YouTube Clone Project. This project is designed to assess the React skills we have gained so far in our journey to become Full Stack Web Developers. Inspired by the original YouTube, we created a React Application (from scratch) that allows users to search for YouTube videos using the YouTube API. It then allows you to choose a video from your search results to watch and the ability to share videos with an easy-to-use interface that anyone can navigate. Our website is designed to be user-friendly, with responsive design optimized for different devices such as desktops, laptops, tablets, and smartphones.",
         name: "YouTube-clone"
     }
 
